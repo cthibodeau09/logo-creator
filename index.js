@@ -5,7 +5,7 @@ const fs = require("fs");
 // Shapes.js import 
 const {Triangle, Square, Circle} = require("./lib/shapes");
 
-/ Function writes the SVG file using user answers from inquirer prompts
+// Function writes the SVG file using user answers from inquirer prompts
 function writeToFile(fileName, answers) {
   // File starts as an empty string
   let svgString = "";
