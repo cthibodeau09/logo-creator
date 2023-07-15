@@ -13,3 +13,4 @@ npm i inquirer@8.2.4
 
 ## Usage
 Run node index.js
+Answer the prompted questions to create your own logo!
