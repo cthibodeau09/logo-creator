@@ -1,5 +1,5 @@
 {
-  "name": "npm-init-logo",
+  "name": "logo-creator",
   "version": "1.0.0",
   "description": "package.json",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/cthibodeau09/logo-creator.git"
   },
   "keywords": [

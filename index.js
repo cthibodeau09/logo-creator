@@ -1,9 +1,9 @@
 // Inquirer node package import
-const inquirer = require("inquirer");
+import { prompt } from "inquirer";
 // File system module node package import
-const fs = require("fs");
+import { writeFile } from "fs";
 // Shapes.js import 
-const {Triangle, Square, Circle} = require("./lib/shapes");
+import { Triangle, Square, Circle } from "./lib/shapes";
 
 // Function writes the SVG file using user answers from inquirer prompts
 function writeToFile(fileName, answers) {
@@ -38,15 +38,14 @@ function writeToFile(fileName, answers) {
   svgString += "</svg>";
 
 
-  fs.writeFile(fileName, svgString, (err) => {
+  writeFile(fileName, svgString, (err) => {
     err ? console.log(err) : console.log("Generated logo.svg");
   });
 }
 
 // Questions for user input
 function promptUser() {
-    inquirer
-    .prompt([
+    prompt([
     {
         type: "input",
         name: "text",
